@@ -31,22 +31,6 @@ pipeline {
                     digest: "6f637064707039346163663237383938",
                     label: "preprod,test"
                 )
-                registerBuildArtifactMetadata(
-                    name: "artifact-2",
-                    version: "1.0.1",
-                    type: "docker",
-                    url: "http://localhost:222",
-                    digest: "7f637064707039346163663237383938",
-                    label: "nort,south"
-                )
-                registerBuildArtifactMetadata(
-                    name: "artifact-3",
-                    version: "1.0.1",
-                    type: "docker",
-                    url: "http://localhost:333",
-                    digest: "8f6370647070393463663237383938",
-                    label: "ease,west"
-                )
             }
         }
 
