@@ -34,12 +34,12 @@ pipeline {
                 // )
                 
                 registerBuildArtifactMetadata(
-                    name: "test-deployment",
-                    version: "1.0.0",
+                    name: "test-deployment-v2",
+                    version: "2.0.0",
                     type: "docker",
                     url: "http://aws.artifacts/6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
                     digest: "6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
-                    label: "Internal-demo-BT-art"
+                    label: "Internal-demo-BT-artifact-Prod"
                 )
                 // registerBuildArtifactMetadata(
                 //     name: "prod-demo-runs-BT-branch-2",
