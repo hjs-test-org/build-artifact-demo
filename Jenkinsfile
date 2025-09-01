@@ -23,30 +23,22 @@ pipeline {
             steps {
                 echo 'Registering the metadata'
                 echo 'Another echo to make the pipeline a bit more complex'
-                registerBuildArtifactMetadata(
-                    name: "test-deployment",
-                    version: "1.0.0",
-                    type: "docker",
-                    url: "http://aws.artifacts/6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
-                    digest: "6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
-                    label: "preprod,test"
-                )
-                registerBuildArtifactMetadata(
-                    name: "QA-deployment",
+               registerBuildArtifactMetadata(
+                    name: "prod-demo-runs-BT-branch-2",
                     version: "1.0.1",
                     type: "docker",
-                    url: "http://aws.artifacts/94805399282f52bc22e0afdad26dda3bcd28258e",
-                    digest: "94805399282f52bc22e0afdad26dda3bcd28258e",
-                    label: "nort,south"
+                    url: "http://localhost:4001",
+                    digest: "6f637064707039346163663237383761",
+                    label: "Internal-demo-BT-artifact-Prod"
                 )
-                registerBuildArtifactMetadata(
-                    name: "prod-deployment",
-                    version: "1.0.2",
-                    type: "docker",
-                    url: "http://aws.artifacts.com/52c22f83e883b55cbc23ca7d207c5a93f5d28089",
-                    digest: "52c22f83e883b55cbc23ca7d207c5a93f5d28089",
-                    label: "ease,west"
-                )
+                // registerBuildArtifactMetadata(
+                //     name: "test-deployment",
+                //     version: "1.0.0",
+                //     type: "docker",
+                //     url: "http://aws.artifacts/6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
+                //     digest: "6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
+                //     label: "preprod,test"
+                // )
             }
         }
 
