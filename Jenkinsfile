@@ -39,7 +39,7 @@ pipeline {
                     type: "docker",
                     url: "http://aws.artifacts/6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
                     digest: "6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
-                    label: "Internal-demo-BT-artifact-Prod"
+                    label: "Internal-demo-BT-art"
                 )
                 // registerBuildArtifactMetadata(
                 //     name: "prod-demo-runs-BT-branch-2",
