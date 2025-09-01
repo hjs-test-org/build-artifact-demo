@@ -24,13 +24,22 @@ pipeline {
                 echo 'Registering the metadata'
                 echo 'Another echo to make the pipeline a bit more complex'
     
+                // registerBuildArtifactMetadata(
+                //     name: "test-deployment",
+                //     version: "1.0.1",
+                //     type: "docker",
+                //     url: "http://localhost:4001",
+                //     digest: "6f637064707039346163663237383761",
+                //     // label: "Internal-demo-BT-artifact-Prod"
+                // )
+                
                 registerBuildArtifactMetadata(
                     name: "test-deployment",
-                    version: "1.0.1",
+                    version: "1.0.0",
                     type: "docker",
-                    url: "http://localhost:4001",
-                    digest: "6f637064707039346163663237383761",
-                    // label: "Internal-demo-BT-artifact-Prod"
+                    url: "http://aws.artifacts/6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
+                    digest: "6a9acc6aa1be5446a2393ab90e7ca9e218bc07fa",
+                    label: "Internal-demo-BT-artifact-Prod"
                 )
                 // registerBuildArtifactMetadata(
                 //     name: "prod-demo-runs-BT-branch-2",
